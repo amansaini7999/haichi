@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Student</title>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('student') }}">Student</a></li>
+        <li><a href="{{ url_for('TPO') }}">TPO</a></li>
+        <li><a href="{{ url_for('company') }}">Company</a></li>
+      </ul>
+      <div id="home-container">
+        <!-- inner sub id starts -->
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1)" width="1500" height="800" src="https://framer.com/embed/Aspirethon-Prototype--jbt4TxZ3zuorpk1L5vJ3/JQHOl0TZb?highlights=0" allowfullscreen></iframe>
+        
+        <div id="inner">
+            <img src="static/logo.svg" alt="Crypts logo" id="logo">
+            <h1>Hai + Chi = Haichi</h1>
+            <p class="subtitle">One Stop Solution to all Placement Needs</p>
+            <!-- <a href="#" class="cta cta--white ">Login or signup</a> -->
+        </div>
+        <!-- inner sub id ends -->
+
+        
+    </div>
+    <!-- home container id ends -->
+     
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRYPTS-landing page</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <script>
+        $(function () {
+            var str = '#len'; //increment by 1 up to 1-nelemnts
+            $(document).ready(function () {
+                var i, stop;
+                i = 1;
+                stop = 4; //num elements
+                setInterval(function () {
+                    if (i > stop) {
+                        return;
+                    }
+                    $('#len' + (i++)).toggleClass('bounce');
+                }, 500)
+            });
+        });
+    </script>
+
+    <ul>
+        <li><a class="active" href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('student') }}">Student</a></li>
+        <li><a href="{{ url_for('TPO') }}">TPO</a></li>
+        <li><a href="{{ url_for('company') }}">Company</a></li>
+      </ul>
+    <!-- home container id starts -->
+    <div id="home-container">
+        <!-- inner sub id starts -->
+        <div id="inner">
+            <img src="static/logo.svg" alt="Crypts logo" id="logo">
+            <h1>Hai + Chi = Haichi</h1>
+            <p class="subtitle">One Stop Solution to all Placement Needs</p>
+            <!-- <a href="#" class="cta cta--white ">Login or signup</a> -->
+        </div>
+        <!-- inner sub id ends -->
+
+        <!-- illustration sub id starts -->
+        <div id="illustration">
+            <img src="static/dash.svg" alt="dash img" id="dash" class="crypto-icons">
+            <img src="static/miota.svg" alt="iota img" id="iota" class="crypto-icons">
+            <img src="static/eth.svg" alt="eth img" id="eth" class="crypto-icons">
+            <img src="static/monitor.svg" alt="monitor img" id="monitor">
+        </div>
+        <!-- illustration sub id ends -->
+    </div>
+    <!-- home container id ends -->
+    <footer id="footer">
+        Made with ❤ By:-
+        <br>
+        Ritik Miglani, Aman Saini, Kritika Sagar, Nimisha Pareek, Madhulika Ghosh
+    </footer>
+</body>
+
+</html>
