@@ -199,3 +199,23 @@ ul {
     width: 100%;
     /* height: 2.5rem;            Footer height */
   }
+
+  #team-name {
+    text-align: center;
+}
+
+#team-image {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img {
+    border-radius: 50%;
+  }
+
+  #logo{ 
+	position:fixed; 
+	top:30px;
+	left:0; 
+} 
