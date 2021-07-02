@@ -54,7 +54,35 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="card-view">
+        <a href="{{ url_for('student') }}">
+            <div class="card">
+                <img src="static/logo.png" alt="Student View" style="width: 100%">
+                <div class="container">
+                  <h4><b>Student View</b></h4>
+                </div>
+              </div>
+        </a>
+
+        <a href="{{ url_for('TPO') }}">
+            <div class="card">
+                <img src="static/logo.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>College Placement Team View</b></h4>
+                </div>
+              </div>
+        </a>
+
+        <a href="{{ url_for('company') }}">
+            <div class="card">
+                <img src="static/logo.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Recruiting Team View</b></h4>
+                </div>
+              </div>
+            </div>
+        </a>
 
     <br>
     <br>
@@ -70,7 +98,9 @@
 
     <div id="team-image">
         <h3>Mentor</h3>
-        <img src="static/Team Images/s.jpeg" alt="Team Image" width="200" height="200">
+        <a href="https://garagehackbox.azurewebsites.net/profile/cb7d6033-46d5-4677-86fb-f924cf4f4e40/projects" target="_blank">
+            <img src="static/Team Images/s.jpeg" alt="Team Image" width="200" height="200">
+         </a>
     </div>
 
     <div id="team-image">
