@@ -202,6 +202,7 @@ ul {
 
   #team-name {
     text-align: center;
+    padding-right: 40px;
 }
 
 #team-image {
@@ -215,7 +216,7 @@ img {
   }
 
   #logo{ 
-	position:fixed; 
+	float:left; 
 	top:30px;
 	left:0; 
 } 
